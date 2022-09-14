@@ -6,7 +6,8 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('./Capture.png');
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://sayarinu.github.io/Capture.png");
     background-size: cover;
     background-position: center;
 }
