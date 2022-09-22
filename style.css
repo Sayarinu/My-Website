@@ -40,7 +40,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #740b6e70;
+    background: #a50d9d;
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -69,4 +69,12 @@
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+}
+.screenshots {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    transform: translateY(100%);
+    text-align: center;
+    color: #fff;
 }
