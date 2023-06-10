@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    box-sizing: border-box;
+}
+
+.navbar {
+    color: #FFFF00;
+}
