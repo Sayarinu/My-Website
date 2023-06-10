@@ -8,6 +8,6 @@ html {
     box-sizing: border-box;
 }
 
-.navbar {
+div.navbar {
     color: #FFFF00;
 }
