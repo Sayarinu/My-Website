@@ -1,40 +1,236 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
     <head>
-        <title>Carter Garcia Website</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Keita Yamada</title>
+        <meta name="description" content="Designer and Developer in Japan">
+        <link rel="canonical" href="https://p5aholic.me">
+        <meta property="og:locale" content="ja_JP">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Keita Yamada">
+        <meta property="og:title" content="Keita Yamada">
+        <meta property="og:description" content="Designer and Developer in Japan">
+        <meta property="og:url" content="https://p5aholic.me">
+        <meta property="og:image" content="https://p5aholic.me/assets/share-image.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="google" content="nositelinkssearchbox">
+        <meta name="google" content="notranslate">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="icon" href="/assets/favicon.png">
+        <link rel="apple-touch-icon" href="/assets/favicon.png">
     </head>
     <body>
-            <div class="banner">
-                <div class="navbar">
-                    <ul>
-                        <li><a href=index.html>Home</a></li>
-                        <li><a href=projects.html>Projects & Games</a></li>
-                        <li><a href="https://sayarin.itch.io/" target="_blank">itch.io</a></li>
-                        <li><a href="https://github.com/Sayarinu" target="_blank">github</a></li>
-                        <li><a href="https://www.twitch.tv/sayarinu" target="_blank">twitch</a></li>
-                        <li><a href="https://twitter.com/Sayarinlol" target="_blank">twitter</a></li>
-                    </ul>
+        <div id="EnterView">
+            <div class="_t1">Keita Yamada</div>
+            <div class="_t2">Portfolio</div>
+        </div>
+        <div id="Page">
+            <div id="Background">
+                <canvas></canvas>
+            </div>
+            <div class="mask" id="Mask">
+                <div class="mask_top"></div>
+                <div class="mask_bottom"></div>
+            </div>
+            <div class="frame" id="Frame">
+                <div class="frame_line frame_line-left"></div>
+                <div class="frame_line frame_line-right"></div>
+                <div class="frame_line frame_line-top"></div>
+                <div class="frame_line frame_line-bottom"></div>
+            </div>
+            <div class="theme" id="Theme" x-data @click="$store.ui.toggleTheme()">
+                <div class="theme_color" :class="{ 'is-selected': $store.ui.theme === 'light' }">
+                    <div class="_box"></div>
+                    <div class="_text">Light</div>
                 </div>
-                <div class="content">
-                    <h1>Welcome to my website</h1>
-                    <p>I am Carter Garcia. I am an NYU Student studying Computer Science
-                        with concentrations in Integrated Design and Media, Game Engineering
-                        and Mathematics.
-                        <br>
-                        <br>
-                        During college I played for New York University's Violet
-                        League of Legends Team. We would compete amongst other colleges in the official
-                        Riot Games League of Legends Collegiate Circuit.
-                        <br>
-                        <br>
-                        I like to learn new things and practice new hobbies and skills. I
-                        currently am practicing piano and drawing to hone my creative skills.
-                        I love playing video games and learning about and creating console and handheld
-                        homebrew programs.
-                    </p>
-                    <div>
-                    </div>
+                <div class="theme_color" :class="{ 'is-selected': $store.ui.theme === 'dark' }">
+                    <div class="_box"></div>
+                    <div class="_text">Dark</div>
                 </div>
             </div>
+            <header class="siteHeader" id="SiteHeader">
+                <h1 class="siteHeader_title">Keita Yamada</h1>
+                <p class="siteHeader_label">Designer &Developer</p>
+                <nav class="siteHeader_nav" x-data>
+                    <ol>
+                        <li :class="{ 'is-selected': $store.ui.currentPath === '/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/">Home</a>
+                        </li>
+                        <li :class="{ 'is-selected': $store.ui.currentPath === '/projects/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/projects/">Projects</a>
+                        </li>
+                        <li :class="{ 'is-selected': $store.ui.currentPath === '/info/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/info/">Info</a>
+                        </li>
+                        <li :class="{ 'is-selected': $store.ui.currentPath === '/contact/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/contact/">Contact</a>
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+            <main class="content" id="Content" data-scroll="area">
+                <div class="content_inner" data-scroll="target">
+                    <section class="page" data-page="home">
+                        <div class="page_content home">
+                            <p class="home_aboutme">
+                                <span>Born in 1994</span>
+                                <span>in Osaka, Japan.</span>
+                                <span>I believe</span>
+                                <span>web design</span>
+                                <span>can be more</span>
+                                <span>diverse and inspiring.</span>
+                                <span>With a mission</span>
+                                <span>to present</span>
+                                <span>the possibilities</span>
+                                <span>of web design,</span>
+                                <span>I am pursuing</span>
+                                <span>new expressions</span>
+                                <span>through experiments</span>
+                                <span>and thoughts.</span>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="page" data-page="projects">
+                        <div class="page_content project">
+                            <div class="project_section">
+                                <h2 class="project_heading">&#x25a0;Projects (Design &Develop)</h2>
+                                <div class="project_list">
+                                    <a class="project_item text-btn" href="https://midnight-grand-orchestra.jp/overture-bluray-dvd/" target="_blank" rel="noopener">
+                                        <div class="project_title">“OVERTURE” Blu-Ray/DVD</div>
+                                        <div class="project_info">2023 / Commission / Special</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://yansukim.com" target="_blank" rel="noopener">
+                                        <div class="project_title">yansuKIM</div>
+                                        <div class="project_info">2023 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://punchred.xyz" target="_blank" rel="noopener">
+                                        <div class="project_title">PUNCH</div>
+                                        <div class="project_info">2022 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://solani-illustration.xyz" target="_blank" rel="noopener">
+                                        <div class="project_title">SOLANI</div>
+                                        <div class="project_info">2022 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://revenge-pop.mikapikazo.info" target="_blank" rel="noopener">
+                                        <div class="project_title">REVENGE POP</div>
+                                        <div class="project_info">2022 / Commission / Special</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://holo.punchred.xyz" target="_blank" rel="noopener">
+                                        <div class="project_title">HOLO.g</div>
+                                        <div class="project_info">2021 / Commission / Special</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://pan-projects.com" target="_blank" rel="noopener">
+                                        <div class="project_title">PAN- PROJECTS</div>
+                                        <div class="project_info">2021 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://yoshikiokamura.art" target="_blank" rel="noopener">
+                                        <div class="project_title">Yoshiki Okamura</div>
+                                        <div class="project_info">2021 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://buoy.work" target="_blank" rel="noopener">
+                                        <div class="project_title">buoy</div>
+                                        <div class="project_info">2020 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://experiments.p5aholic.me" target="_blank" rel="noopener">
+                                        <div class="project_title">Experiments</div>
+                                        <div class="project_info">2020 / Personal / Gallery</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://100daysofpoetry.gallery" target="_blank" rel="noopener">
+                                        <div class="project_title">100 DAYS OF POETRY</div>
+                                        <div class="project_info">2020 / Commission / Gallery</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project_section">
+                                <h2 class="project_heading">&#x25a0;Projects (Only Develop)</h2>
+                                <div class="project_list">
+                                    <a class="project_item text-btn" href="https://vixi-vixi.jp" target="_blank" rel="noopener">
+                                        <div class="project_title">VIXI</div>
+                                        <div class="project_info">2021 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://signif.jp" target="_blank" rel="noopener">
+                                        <div class="project_title">Signif</div>
+                                        <div class="project_info">2020 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://nanameinc.jp" target="_blank" rel="noopener">
+                                        <div class="project_title">naname</div>
+                                        <div class="project_info">2020 / Commission / Portfolio</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="page" data-page="info">
+                        <div class="page_content info">
+                            <div class="info_item info_item-1">
+                                <div class="info_content">
+                                    <ul>
+                                        <li>
+                                            <a class="text-btn" href="https://twitter.com/P5_keita" target="_blank" rel="noopener">Twitter ↗</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-btn" href="https://www.instagram.com/p5aholic/" target="_blank" rel="noopener">Instagram ↗</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info_item info_item-2">
+                                <div class="info_content">
+                                    <ul>
+                                        <li>
+                                            <a class="text-btn" href="https://experiments.p5aholic.me" target="_blank" rel="noopener">experiments.p5aholic.me ↗</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-btn" href="https://playground.p5aholic.me" target="_blank" rel="noopener">playground.p5aholic.me ↗</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info_item info_item-3">
+                                <div class="info_content">
+                                    <ul>
+                                        <li>
+                                            <span class="is-light">
+                                                Awwwards Independent of the Year<br>
+                                            </span>
+                                            <span>2020 Nominee</span>
+                                        </li>
+                                        <li>
+                                            <span class="is-light">
+                                                Awwwards Site of the Day<br>
+                                            </span>
+                                            <span>Web Graphic Experiments</span>
+                                        </li>
+                                        <li>
+                                            <span class="is-light">
+                                                Awwwards Site of the Day<br>
+                                            </span>
+                                            <span>100 DAYS OF POETRY</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="page" data-page="contact">
+                        <div class="page_content contact">
+                            <div class="contact_wrap">
+                                <a class="contact_text jp text-btn" href="https://p5aholic.notion.site/p5aholic/Web-aac658c501b8458080dcc19e5ff26e51" target="_blank" rel="noopener">制作の依頼について ↗</a>
+                                <a class="contact_text en text-btn" href="https://p5aholic.notion.site/p5aholic/Contact-f7a0724e15d44eaebddbf7f09459aef4" target="_blank" rel="noopener">Contact Form ↗</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="/assets/js/main.js"></script>
     </body>
 </html>
