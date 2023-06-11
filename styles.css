@@ -11,32 +11,3 @@ html {
 div.navbar {
     font-size: 400%;
 }
-
-body {
-    background-image: url('black_and_white_texture.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
-  
-#container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-  
-#square {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 100px;
-    height: 100px;
-    background-color: #FAF9F6;
-}
-  
-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}  
