@@ -8,5 +8,4 @@ document.getElementById('animateButton').addEventListener('click', function() {
     setTimeout(function() {
       window.location.href = 'new_page.html'; // Replace with the URL of your new page
     }, 2000); // Adjust the delay (in milliseconds) to match the animation duration
-  });
-  
+  });  

@@ -13,31 +13,30 @@ div.navbar {
 }
 
 body {
-    background-image: url('black_and_white_texture.png'); /* Replace with your texture image */
+    background-image: url('black_and_white_texture.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-  }
+}
   
-  #container {
+#container {
     position: relative;
     width: 100vw;
     height: 100vh;
-  }
+}
   
-  #square {
+#square {
     position: absolute;
     top: 10px;
     right: 10px;
     width: 100px;
     height: 100px;
     background-color: #FAF9F6;
-  }
+}
   
-  button {
+button {
     position: absolute;
     top: 10px;
     left: 10px;
-  }
-  
+}  
