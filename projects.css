@@ -1,0 +1,116 @@
+* {
+    color: #f2e9e4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+html {
+    background-color: #6e5774;
+    background-image:
+        linear-gradient(30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(-30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(-30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(-30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(-30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(45deg, #1c1c21 25%, transparent 25%, transparent 75%, #1c1c21 75%),
+        linear-gradient(45deg, #1c1c21 25%, transparent 25%, transparent 75%, #1c1c21 75%);
+    background-position:
+        0em 2em,
+        0em 2em,
+        2em 4em,
+        2em 4em,
+        4em 2em,
+        4em 2em,
+        6em 4em,
+        6em 4em,
+        0em 0em,
+        2em 2em;
+    background-size:
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        4em 4em,
+        4em 4em;
+}
+
+div.icon {
+    text-align: left;
+    transform: scale(0.10);
+    width: 40px;
+    height: 0px;
+}
+
+div.navbar {
+    text-align: right;
+    font-size: 250%;
+    width: 100%;
+}
+
+div.guide {
+    padding: 9.5% 0% 10% 0%;
+}
+
+.fa-github, .fa-linkedin, .fa-twitter {
+    color: #f2e9e4;
+}
+
+.fa-github:hover, .fa-linkedin:hover, .fa-twitter:hover {
+    color: #c9ada7;
+    transform: translateY(-5px);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+  
+.fade-in.fade-in-visible {
+    opacity: 1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    transition: 0.6s;
+    padding: 20px 20px;
+    background-color:rgba(49, 34, 68, 0.95);
+    color: #fff1e6;
+    animation: slideDown 1s ease-in-out, 0s, 1, normal, none;
+}
+
+body {
+    background-color: rgba(35, 35, 35, 0.2);
+    height: 100vh;
+}
