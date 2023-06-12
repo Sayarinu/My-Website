@@ -1,36 +1,22 @@
 * {
+    color: #fff1e6;
     margin: 0;
     padding: 0;
 }
 
-div.navbar {
-    font-size: 400%;
-    text-align: right;
-    color: #000000;
-}
-
-div.information {
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-}
-
-body {
-    background: radial-gradient(circle, #FFEEDB, #4C3B4D);
-}
-
 html {
-    background-color: #212D40;
+    background-color: #6e5774;
     background-image:
-        linear-gradient(30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
-        linear-gradient(-30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
-        linear-gradient(30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
-        linear-gradient(-30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
-        linear-gradient(30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
-        linear-gradient(-30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
-        linear-gradient(30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
-        linear-gradient(-30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
-        linear-gradient(45deg, #544 25%, transparent 25%, transparent 75%, #544 75%),
-        linear-gradient(45deg, #544 25%, transparent 25%, transparent 75%, #544 75%);
+        linear-gradient(30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(-30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(-30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(-30deg, #404556 13.5%, transparent 13.5%, transparent 86.5%, #404556 86.5%),
+        linear-gradient(30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(-30deg, #312244 13.5%, transparent 13.5%, transparent 86.5%, #312244 86.5%),
+        linear-gradient(45deg, #1c1c21 25%, transparent 25%, transparent 75%, #1c1c21 75%),
+        linear-gradient(45deg, #1c1c21 25%, transparent 25%, transparent 75%, #1c1c21 75%);
     background-position:
         0em 2em,
         0em 2em,
@@ -53,4 +39,37 @@ html {
         8em 4em,
         4em 4em,
         4em 4em;
-  }
+}
+
+div.headbar {
+    text-align: center;
+}
+
+div.navbar {
+    text-align: right;
+    font-size: 250%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 98%;
+}
+
+div.icon {
+    text-align: left;
+    padding: 40px, 0px, 10px, 2%;
+    transform: scale(0.12);
+    width: 10px;
+    height: 20px;
+}
+
+div.information {
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+}
+
+.fa-github, .fa-linkedin, .fa-twitter {
+    color: #f2e9e4;
+}
+
+.fa-github:hover, .fa-linkedin:hover, .fa-twitter:hover {
+    color: #c9ada7;
+}
