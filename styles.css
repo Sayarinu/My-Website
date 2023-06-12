@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #FFEEDB, #4C3B4D);
 }
 
 html {
@@ -12,4 +11,9 @@ html {
 div.navbar {
     font-size: 400%;
     text-align: right;
+}
+
+body {
+    background: radial-gradient(circle, #FFEEDB, #4C3B4D);
+    font-family: 'Roboto', sans-serif;
 }
