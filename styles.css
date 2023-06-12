@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-html {
-    line-height: 1.15;
-    box-sizing: border-box;
-}
-
 div.navbar {
     font-size: 400%;
     text-align: right;
@@ -22,3 +17,40 @@ div.information {
 body {
     background: radial-gradient(circle, #FFEEDB, #4C3B4D);
 }
+
+html {
+    background-color: #212D40;
+    background-image:
+        linear-gradient(30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+        linear-gradient(-30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+        linear-gradient(30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
+        linear-gradient(-30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
+        linear-gradient(30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+        linear-gradient(-30deg, #fee 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+        linear-gradient(30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
+        linear-gradient(-30deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #dcc 86.5%),
+        linear-gradient(45deg, #544 25%, transparent 25%, transparent 75%, #544 75%),
+        linear-gradient(45deg, #544 25%, transparent 25%, transparent 75%, #544 75%);
+    background-position:
+        0em 2em,
+        0em 2em,
+        2em 4em,
+        2em 4em,
+        4em 2em,
+        4em 2em,
+        6em 4em,
+        6em 4em,
+        0em 0em,
+        2em 2em;
+    background-size:
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        8em 4em,
+        4em 4em,
+        4em 4em;
+  }
