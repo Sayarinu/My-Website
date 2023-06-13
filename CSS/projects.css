@@ -124,7 +124,7 @@ body {
 }
 
 .project {
-    padding-top: 10%;
+    padding-top: 5%;
     flex-basis: calc(100% / 4);
     text-align: center;
     font-size: 200%;
