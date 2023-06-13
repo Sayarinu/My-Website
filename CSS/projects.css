@@ -111,6 +111,36 @@ header {
 }
 
 body {
-    background-color: rgba(35, 35, 35, 0.2);
     height: 100vh;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 1em;
+}
+
+.project {
+    padding-top: 10%;
+    flex-basis: calc(100% / 4);
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: #E5EAFA;
+}
+
+.project-description {
+    padding-top: 10%;
+    flex-basis: calc(100% / 4);
+    text-align: center;
+    font-size: 75%;
+}
+
+img {
+    height: 400px;
+    width: auto;
+    object-fit: contain;
 }
